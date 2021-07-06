@@ -1,8 +1,6 @@
 # BloonBot
 Original: https://github.com/RavingSmurfGB/Py_AutoBloons
 This is my version of the bot made by RavingSmurfGB. The original didn't seem to work so I made my own.
-A Python script that will loop Dark Castle on easy difficulty.  
-Gives Monkey Money, Player XP & Insta-Monkeys.
 
 ## Contents
 * [How It Works](#How_It_Works)
@@ -13,7 +11,7 @@ Gives Monkey Money, Player XP & Insta-Monkeys.
 * [XP Support](#XP_Support)
 
 ## How It Works
-This program will select the map Dark Castle, beat it on easy difficulty, collect any levels, collect any event items, then loop continously.  
+This program will select the map Dark Castle, beat it on easy difficulty, collect any levels, collect any event items, then loop continuously.  
 It will use the Hero OBYN (Which will be selected auto if not), a submarine and a ninja monkey to beat the game.  
 Please view [What Is Needed](#What_Is_Needed)<a name="What_Is_Needed"></a> to ensure your setup and ready to run the program.  
 Please view [XP Support](#XP_Support)<a name="XP_Support"></a> if you would like this program to automate XP gathring for monkeys.
@@ -40,8 +38,8 @@ Upgrade path 3:		 3
 To run this script ensure that the following upgrades are obtained and the Expert map Dark Castle is unlocked.
 Monkey        | Upgrade
 ------------- | -------------
-Submarine     | <ul><li>2-0-4</li>
-Ninja         | <ul><li>4-0-1</li>
+Submarine     | <ul>2-0-4
+Ninja         | <ul>4-0-1
 
 ## Compatibility
 #### Resolutions supported:  
