@@ -1,4 +1,0 @@
-pyautogui
-keyboard
-numpy
-colorama
