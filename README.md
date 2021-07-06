@@ -12,7 +12,10 @@ Keybinds that need to be changed:
 Upgrade path 1:		 1  
 Upgrade path 2:		 2  
 Upgrade path 3:		 3  
-To run this script ensure that the following upgrades are obtained and the Expert map Dark Castle is unlocked.  
+
+Map: Dark Castle  
+
+Upgrades:  
 Monkey        | Upgrade
 ------------- | -------------
 Submarine     | <ul>2-0-4
