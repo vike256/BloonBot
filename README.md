@@ -14,7 +14,7 @@ This is my version of the bot made by RavingSmurfGB. The original didn't seem to
 This program will select the map Dark Castle, beat it on easy difficulty, collect any levels, collect any event items, then loop continuously.  
 It will use the Hero OBYN (Which will be selected auto if not), a submarine and a ninja monkey to beat the game.  
 Please view [What Is Needed](#What_Is_Needed)<a name="What_Is_Needed"></a> to ensure your setup and ready to run the program.  
-Please view [XP Support](#XP_Support)<a name="XP_Support"></a> if you would like this program to automate XP gathring for monkeys.
+Please view [XP Support](#XP_Support)<a name="XP_Support"></a> if you would like this program to automate XP gathering for monkeys.
 
 
 ## Installation
