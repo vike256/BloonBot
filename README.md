@@ -9,9 +9,9 @@ It will use the Hero OBYN (Which will be selected auto if not), a submarine and 
 
 ## In-Game Requirements
 Keybinds that need to be changed:  
-Upgrade path 1:		 1  
-Upgrade path 2:		 2  
-Upgrade path 3:		 3  
+Upgrade path 1:		 <ul>1  
+Upgrade path 2:		 <ul>2  
+Upgrade path 3:		 <ul>3  
 
 Map: Dark Castle  
 
