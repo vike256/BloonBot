@@ -4,7 +4,7 @@ This is my version of the bot made by RavingSmurfGB.
 The original didn't seem to work so I made my own.  
 
 ## How It Works
-This program will select the map Dark Castle and beat it on easy difficulty while collecting any levels and event items.
+This program will select the map Dark Castle and beat it on easy difficulty while collecting any levels and event items.  
 It will use the Hero OBYN (Which will be selected auto if not), a submarine and a ninja monkey to beat the game.   
 
 ## In-Game Requirements
