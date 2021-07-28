@@ -388,46 +388,46 @@ def Main_Game():
     Null_Round(10) # Round 26
     Null_Round(16) # Round 27
     place_tower("BANANA", "BANANA_FARM_1_LOCATION") 
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 28
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 29
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 28
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 29
     upgrade_tower('1', "BANANA_FARM_1_LOCATION") # farm_1 100
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 30
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 30
     upgrade_tower('1', "BANANA_FARM_1_LOCATION") # farm_1 200
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 31
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 31
     place_tower("ALCHEMIST", "ALCHEMIST_LOCATION")
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 32
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 32
     upgrade_tower('1', "ALCHEMIST_LOCATION") # alch 100
     upgrade_tower('1', "ALCHEMIST_LOCATION") # alch 200
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 33
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 34
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 33
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 34
     upgrade_tower('1', "ALCHEMIST_LOCATION") # alch 300
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 35
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 35
     upgrade_tower('3', "ALCHEMIST_LOCATION") # alch 301
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 36
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 37
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 38
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 36
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 37
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 38
     upgrade_tower('3', "SUBMARINE_1_LOCATION") # Sub_1 204
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 39
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 39
     upgrade_tower('2', "BANANA_FARM_1_LOCATION") # farm_1 210
     upgrade_tower('2', "BANANA_FARM_1_LOCATION") # farm_1 220
     place_tower("SPIKE", "SPIKE_FACTORY_LOCATION")
-    Powers_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 40
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 41
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 42
+    Powers_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 40
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 41
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 42
     upgrade_tower('1', "ALCHEMIST_LOCATION") # alch 401
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 43
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 44
-    Null_Farming_Round(20, BANANA_FARM_1_LOCATION) # Round 45
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 43
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 44
+    Null_Farming_Round(20, "BANANA_FARM_1_LOCATION") # Round 45
     upgrade_tower('2', "BANANA_FARM_1_LOCATION") # farm_1 230
     place_tower("BANANA", "BANANA_FARM_2_LOCATION")
-    Null_Farming_Round(20, BANANA_FARM_2_LOCATION) # Round 46
+    Null_Farming_Round(20, "BANANA_FARM_2_LOCATION") # Round 46
     upgrade_tower('1', "BANANA_FARM_2_LOCATION") # farm_2 100
     upgrade_tower('1', "BANANA_FARM_2_LOCATION") # farm_2 200
-    Null_Farming_Round(20, BANANA_FARM_2_LOCATION) # Round 47
+    Null_Farming_Round(20, "BANANA_FARM_2_LOCATION") # Round 47
     upgrade_tower('2', "BANANA_FARM_2_LOCATION") # farm_2 210
     upgrade_tower('2', "BANANA_FARM_2_LOCATION") # farm_2 220
-    Null_Farming_Round(20, BANANA_FARM_2_LOCATION) # Round 48
-    Powers_Farming_Round(20, BANANA_FARM_2_LOCATION) # Round 49
+    Null_Farming_Round(20, "BANANA_FARM_2_LOCATION") # Round 48
+    Powers_Farming_Round(20, "BANANA_FARM_2_LOCATION") # Round 49
     upgrade_tower('2', "BANANA_FARM_2_LOCATION") # farm_2 230
     place_tower("SUBMARINE", "SUBMARINE_2_LOCATION")
     upgrade_tower('1', "SUBMARINE_2_LOCATION") # Sub_2 100
@@ -446,51 +446,51 @@ def Main_Game():
     Null_Round(20) # Round 55
     Null_Round(20) # Round 56
     Null_Round(20) # Round 57
-    Bank_Collection(BANANA_FARM_1_LOCATION)
+    Bank_Collection("BANANA_FARM_1_LOCATION")
     Null_Round(20) # Round 58
     Powers_Round(20) # Round 59
-    Null_Round(25, BANANA_FARM_3_LOCATION) # Round 60
-    Null_Round(25, BANANA_FARM_3_LOCATION) # Round 61
-    Bank_Collection(BANANA_FARM_2_LOCATION)
+    Null_Round(25, "BANANA_FARM_3_LOCATION") # Round 60
+    Null_Round(25, "BANANA_FARM_3_LOCATION") # Round 61
+    Bank_Collection("BANANA_FARM_2_LOCATION")
     upgrade_tower('3', "SUBMARINE_1_LOCATION") # Sub_1 205
     upgrade_tower('3', "SUBMARINE_2_LOCATION") # Sub_2 204
     place_tower("BANANA", "BANANA_FARM_3_LOCATION")
-    Null_Farming_Round(25, BANANA_FARM_3_LOCATION) # Round 62
+    Null_Farming_Round(25, "BANANA_FARM_3_LOCATION") # Round 62
     upgrade_tower('1', "BANANA_FARM_3_LOCATION") # farm_3 100
     upgrade_tower('1', "BANANA_FARM_3_LOCATION") # farm_3 200
     upgrade_tower('2', "BANANA_FARM_3_LOCATION") # farm_3 210
-    Powers_Farming_Round(25, BANANA_FARM_3_LOCATION) # Round 63
+    Powers_Farming_Round(25, "BANANA_FARM_3_LOCATION") # Round 63
     upgrade_tower('2', "BANANA_FARM_3_LOCATION") # farm_3 220
-    Null_Farming_Round(25, BANANA_FARM_3_LOCATION) # Round 64
-    Null_Farming_Round(25, BANANA_FARM_3_LOCATION) # Round 65
+    Null_Farming_Round(25, "BANANA_FARM_3_LOCATION") # Round 64
+    Null_Farming_Round(25, "BANANA_FARM_3_LOCATION") # Round 65
     upgrade_tower('2', "BANANA_FARM_3_LOCATION") # farm_3 230
     place_tower("BANANA", "BANANA_FARM_4_LOCATION")
-    Null_Farming_Round(25, BANANA_FARM_4_LOCATION) # Round 66
+    Null_Farming_Round(25, "BANANA_FARM_4_LOCATION") # Round 66
     upgrade_tower('1', "BANANA_FARM_4_LOCATION") # farm_4 100
     upgrade_tower('1', "BANANA_FARM_4_LOCATION") # farm_4 200
     upgrade_tower('2', "BANANA_FARM_4_LOCATION") # farm_4 210
-    Null_Farming_Round(25, BANANA_FARM_4_LOCATION) # Round 67
+    Null_Farming_Round(25, "BANANA_FARM_4_LOCATION") # Round 67
     upgrade_tower('2', "BANANA_FARM_4_LOCATION") # farm_4 220
-    Null_Farming_Round(25, BANANA_FARM_4_LOCATION) # Round 68
-    Null_Farming_Round(25, BANANA_FARM_4_LOCATION) # Round 69
-    Bank_Collection(BANANA_FARM_1_LOCATION)
+    Null_Farming_Round(25, "BANANA_FARM_4_LOCATION") # Round 68
+    Null_Farming_Round(25, "BANANA_FARM_4_LOCATION") # Round 69
+    Bank_Collection("BANANA_FARM_1_LOCATION")
     upgrade_tower('2', "BANANA_FARM_4_LOCATION") # farm_4 230
     Null_Round(25) # Round 70
     Null_Round(25) # Round 71
     Null_Round(25) # Round 72
     Null_Round(25) # Round 73
-    Bank_Collection(BANANA_FARM_2_LOCATION)
+    Bank_Collection("BANANA_FARM_2_LOCATION")
     Null_Round(25) # Round 74
     Null_Round(25) # Round 75
     Null_Round(25) # Round 76
     Null_Round(25) # Round 77
-    Bank_Collection(BANANA_FARM_3_LOCATION)
+    Bank_Collection("BANANA_FARM_3_LOCATION")
     Null_Round(25) # Round 78
     Null_Round(25) # Round 79
     Powers_Round(25) # Round 80
     Null_Round(25) # Round 81
-    Bank_Collection(BANANA_FARM_1_LOCATION)
-    Bank_Collection(BANANA_FARM_4_LOCATION)
+    Bank_Collection("BANANA_FARM_1_LOCATION")
+    Bank_Collection("BANANA_FARM_4_LOCATION")
     upgrade_tower('1', "ALCHEMIST_LOCATION") # alch 501
     place_tower("SUBMARINE", "SUBMARINE_3_LOCATION")
     upgrade_tower('1', "SUBMARINE_3_LOCATION")
@@ -510,7 +510,7 @@ def Main_Game():
     upgrade_tower('3', "SUBMARINE_4_LOCATION")
     Null_Round(25) # Round 84
     Null_Round(25) # Round 85
-    Bank_Collection(BANANA_FARM_2_LOCATION)
+    Bank_Collection("BANANA_FARM_2_LOCATION")
     place_tower("SUBMARINE", "SUBMARINE_5_LOCATION")
     upgrade_tower('1', "SUBMARINE_5_LOCATION")
     upgrade_tower('1', "SUBMARINE_5_LOCATION")
@@ -536,7 +536,7 @@ def Main_Game():
     upgrade_tower('3', "SUBMARINE_7_LOCATION")
     Null_Round(25) # Round 88
     Null_Round(25) # Round 89
-    Bank_Collection(BANANA_FARM_3_LOCATION)
+    Bank_Collection("BANANA_FARM_3_LOCATION")
     upgrade_tower('2', "VILLAGE_LOCATION") # village 210
     upgrade_tower('2', "VILLAGE_LOCATION") # village 220
     upgrade_tower('2', "VILLAGE_LOCATION") # village 230
@@ -544,8 +544,8 @@ def Main_Game():
     Null_Round(25) # Round 91
     Null_Round(25) # Round 92
     Null_Round(25) # Round 93
-    Bank_Collection(BANANA_FARM_1_LOCATION)
-    Bank_Collection(BANANA_FARM_4_LOCATION)
+    Bank_Collection("BANANA_FARM_1_LOCATION")
+    Bank_Collection("BANANA_FARM_4_LOCATION")
     upgrade_tower('2', "VILLAGE_LOCATION") # village 240
     Null_Round(25) # Round 94
     Null_Round(25) # Round 95
@@ -563,7 +563,7 @@ def Main_Game():
     upgrade_tower('3', "GLUE_MONKEY_2_LOCATION") # glue_2 023
     Null_Round(25) # Round 96
     Null_Round(25) # Round 97
-    Bank_Collection(BANANA_FARM_4_LOCATION)
+    Bank_Collection("BANANA_FARM_2_LOCATION")
     upgrade_tower('1', "SPIKE_FACTORY_LOCATION")
     upgrade_tower('1', "SPIKE_FACTORY_LOCATION")
     upgrade_tower('1', "SPIKE_FACTORY_LOCATION")
