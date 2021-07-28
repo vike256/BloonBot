@@ -216,7 +216,7 @@ def Level_Up_Check_End(seconds):
 
     t_end = time.time() + seconds
 
-    while time.time() < t_end and roundover:
+    while time.time() < t_end and roundover: 
         found = pyautogui.locateOnScreen(path, grayscale=True, confidence=0.9)
 
         if found != None:
@@ -253,6 +253,10 @@ def Level_Up_Check_End(seconds):
         if roundcheck != None:
             roundover = False\
         """
+    game_click("MIDDLE_POSITION")
+    game_click("MIDDLE_POSITION")
+    game_click("MIDDLE_POSITION")
+    game_click("MIDDLE_POSITION")
     move_mouse(button_positions["MIDDLE_POSITION"])
     overtime = time.time() - t_end
 
@@ -348,6 +352,9 @@ def Round_100():
     press_key("space")  # Start the round
     press_key("6") # Use CTA
     Level_Up_Check_End(16)
+    game_click("EVENT_EXIT")
+    game_click("EVENT_EXIT")
+    game_click("EVENT_EXIT")
     game_click("EVENT_EXIT")
 
 
