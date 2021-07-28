@@ -552,36 +552,9 @@ def Main_Game():
     Null_Round() # Round 97
     Null_Round() # Round 98
     Powers_Round() # Round 99
-    # Round 100
+    Round_100()# Round 100
     
 
-    Level_Up_Check(20 - overtime)
-    place_tower("SUBMARINE", "SUBMARINE_1_LOCATION")  # 8.5
-    Level_Up_Check(8.5 - overtime)
-    upgrade_tower('1', "SUBMARINE_LOCATION")  # 18
-    Level_Up_Check(18 - overtime)
-    upgrade_tower('3', "SUBMARINE_LOCATION")  # 45
-    Level_Up_Check(45 - overtime)
-    upgrade_tower('3', "SUBMARINE_LOCATION")  # 24
-    Level_Up_Check(24 - overtime)
-    upgrade_tower('1', "SUBMARINE_LOCATION")  # 15
-    Level_Up_Check(15 - overtime)
-    place_tower("NINJA", "NINJA_LOCATION")  # 11.5
-    Level_Up_Check(11.5 - overtime)
-    upgrade_tower('1', "NINJA_LOCATION")  # 11.5
-    Level_Up_Check(11.5 - overtime)
-    upgrade_tower('1', "NINJA_LOCATION")  # 4
-    Level_Up_Check(4 - overtime)
-    upgrade_tower('3', "NINJA_LOCATION")  # 12
-    Level_Up_Check(12 - overtime)
-    upgrade_tower('1', "NINJA_LOCATION")  # 23
-    Level_Up_Check(23 - overtime)
-    upgrade_tower('3', "SUBMARINE_LOCATION")  # 39
-    Level_Up_Check(39 - overtime)
-    upgrade_tower('3', "SUBMARINE_LOCATION")  # 40
-    Level_Up_Check(20 - overtime)
-    upgrade_tower('1', "NINJA_LOCATION")
-    Level_Up_Check(20 - overtime)
 
 
 def Exit_Game():
