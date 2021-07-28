@@ -57,7 +57,7 @@ button_positions = {  # Creates a dictionary of all positions needed for monkeys
     "OVERWRITE_SAVE": [1140, 730],
     "DART_MONKEY_LOCATION": [740, 664],
     "SUBMARINE_1_LOCATION": [1094, 701],
-    "HERO_LOCATION": [883, 665],
+    "HERO_LOCATION": [875, 440],
     "BANANA_FARM_1_LOCATION": [986, 1005],
     "ALCHEMIST_LOCATION": [1025, 845],
     "SPIKE_FACTORY_LOCATION": [1525, 561],
