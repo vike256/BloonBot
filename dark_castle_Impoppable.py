@@ -10,6 +10,7 @@ from colorama import Fore, Back, Style
 
 colorama.init(autoreset=True)
 
+current_round = 6
 overtime = 0
 
 path = "pictures\\levelup.png"
@@ -57,11 +58,9 @@ button_positions = {  # Creates a dictionary of all positions needed for monkeys
     "HARD_MODE": [1300, 400],
     "IMPOPPABLE_GAME_MODE": [1285, 736],
     "OVERWRITE_SAVE": [1140, 730],
-    "TEMP_DART_MONKEY_1_LOCATION": [740, 664],
-    "TEMP_DART_MONKEY_2_LOCATION": [810, 662],
+    "DART_MONKEY_LOCATION": [740, 664],
     "SUBMARINE_1_LOCATION": [1094, 701],
     "HERO_LOCATION": [883, 665],
-    "CAMO_DART_MONKEY_LOCATION": [740, 664],
     "BANANA_FARM_1_LOCATION": [986, 1005],
     "ALCHEMIST_LOCATION": [1025, 845],
     "SPIKE_FACTORY_LOCATION": [1525, 561],
@@ -391,10 +390,64 @@ def Start_Select_Map():
     click("EXPERT_SELECTION")  # Move Mouse to expert and click
     click("RIGHT_ARROW_SELECTION")  # Move Mouse to arrow and click
     click("DARK_CASTLE")  # Move Mouse to Dark Castle
-    click("HARD_MODE")  # Move Mouse to select easy mode
-    click("IMPOPPABLE_GAME_MODE")  # Move mouse to select Standard mode
+    click("HARD_MODE")  # Move Mouse to select hard mode
+    click("IMPOPPABLE_GAME_MODE")  # Move mouse to select Impoppable mode
     click("OVERWRITE_SAVE")  # Move mouse to overwrite save if exists
     print(f'{Fore.CYAN}Map selected.')
+
+
+
+def Null_Round():
+    press_key("space")  # Start the round
+    outputString = "Round {} started".format(current_round)
+    print(outputString)
+    current_round += 1
+    Level_Up_Check_End()
+
+
+
+def Powers_Round():
+    press_key("space")  # Start the round
+    press_key("4") # Use Brambles
+    press_key("5") # Use Wall of Trees
+    outputString = "Round {} started".format(current_round)
+    print(outputString)
+    current_round += 1
+    Level_Up_Check_End()
+
+
+
+def Null_Farming_Round():
+    press_key("space")  # Start the round
+    outputString = "Round {} started".format(current_round)
+    print(outputString)
+    current_round += 1
+    Level_Up_Check_Farm_End()
+
+
+
+def Powers_Farming_Round():
+    press_key("space")  # Start the round
+    press_key("4") # Use Brambles
+    press_key("5") # Use Wall of Trees
+    outputString = "Round {} started".format(current_round)
+    print(outputString)
+    current_round += 1
+    Level_Up_Check_Farm_End()
+
+
+
+def Round_100():
+    press_key("space")  # Start the round
+    press_key("4") # Use Brambles
+    press_key("5") # Use Wall of Trees
+    press_key("6") # Use CTA
+    press_key("7") # Just in Case you have an extra for some reason
+    outputString = "Round {} started".format(current_round)
+    print(outputString)
+    current_round += 1
+    Level_Up_Check_End()
+
 
 
 def Main_Game():
@@ -403,10 +456,113 @@ def Main_Game():
 
     print(f'{Fore.CYAN}Game started.')
 
-    place_tower("HERO", "HERO_LOCATION")
-
+    place_tower("DART", "DART_MONKEY_lOCATION")
+    place_tower("SUBMARINE", "SUBMARINE_1_LOCATION")
+    
     press_key("space")  # Start the game
-    press_key("space")  # Fast forward the game
+    Null_Round() # Round 6
+    Null_Round() # Round 7
+    place_tower("HERO", "HERO_LOCATION")
+    Null_Round() # Round 8
+    Null_Round() # Round 9
+    Null_Round() # Round 10
+    upgrade_tower('3', "SUBMARINE_LOCATION") # Sub_1 001
+    upgrade_tower('1', "SUBMARINE_LOCATION") # Sub_1 101
+    Null_Round() # Round 11
+    Null_Round() # Round 12
+    Null_Round() # Round 13
+    upgrade_tower('1', "SUBMARINE_LOCATION") # Sub_1 201
+    Null_Round() # Round 14
+    Null_Round() # Round 15
+    Null_Round() # Round 16
+    Null_Round() # Round 17
+    Null_Round() # Round 18
+    upgrade_tower('3', "SUBMARINE_LOCATION") # Sub_1 202
+    Null_Round() # Round 19
+    upgrade_tower('3', "DART_MONKEY_LOCATION")
+    upgrade_tower('3', "DART_MONKEY_LOCATION")
+    Null_Round() # Round 20
+    Null_Round() # Round 21
+    Null_Round() # Round 22
+    Null_Round() # Round 23
+    Null_Round() # Round 24
+    Null_Round() # Round 25
+    Null_Round() # Round 26
+    Null_Round() # Round 27
+    Null_Farming_Round() # Round 28
+    Null_Farming_Round() # Round 29
+    Null_Farming_Round() # Round 30
+    Null_Farming_Round() # Round 31
+    Null_Farming_Round() # Round 32
+    Null_Farming_Round() # Round 33
+    Null_Farming_Round() # Round 34
+    Null_Farming_Round() # Round 35
+    Null_Farming_Round() # Round 36
+    Null_Farming_Round() # Round 37
+    Null_Farming_Round() # Round 38
+    Null_Farming_Round() # Round 39
+    Powers_Farming_Round() # Round 40
+    Null_Farming_Round() # Round 41
+    Null_Farming_Round() # Round 42
+    Null_Farming_Round() # Round 43
+    Null_Farming_Round() # Round 44
+    Null_Farming_Round() # Round 45
+    Null_Farming_Round() # Round 46
+    Null_Farming_Round() # Round 47
+    Null_Farming_Round() # Round 48
+    Powers_Farming_Round() # Round 49
+    Null_Round() # Round 50
+    Null_Round() # Round 51
+    Null_Round() # Round 52
+    Null_Round() # Round 53
+    Null_Round() # Round 54
+    Null_Round() # Round 55
+    Null_Round() # Round 56
+    Null_Round() # Round 57
+    Null_Round() # Round 58
+    Powers_Round() # Round 59
+    Null_Farming_Round() # Round 60
+    Null_Farming_Round() # Round 61
+    Null_Farming_Round() # Round 62
+    Powers_Farming_Round() # Round 63
+    Null_Farming_Round() # Round 64
+    Null_Farming_Round() # Round 65
+    Null_Farming_Round() # Round 66
+    Null_Farming_Round() # Round 67
+    Null_Farming_Round() # Round 68
+    Null_Farming_Round() # Round 69
+    Null_Round() # Round 70
+    Null_Round() # Round 71
+    Null_Round() # Round 72
+    Null_Round() # Round 73
+    Null_Round() # Round 74
+    Null_Round() # Round 75
+    Null_Round() # Round 76
+    Null_Round() # Round 77
+    Null_Round() # Round 78
+    Null_Round() # Round 79
+    Powers_Round() # Round 80
+    Null_Round() # Round 81
+    Powers_Round() # Round 82
+    Null_Round() # Round 83
+    Null_Round() # Round 84
+    Null_Round() # Round 85
+    Null_Round() # Round 86
+    Null_Round() # Round 87
+    Null_Round() # Round 88
+    Null_Round() # Round 89
+    Null_Round() # Round 90
+    Null_Round() # Round 91
+    Null_Round() # Round 92
+    Null_Round() # Round 93
+    Null_Round() # Round 94
+    Null_Round() # Round 95
+    Null_Round() # Round 96
+    Null_Round() # Round 97
+    Null_Round() # Round 98
+    Powers_Round() # Round 99
+    # Round 100
+    
 
     Level_Up_Check(20 - overtime)
     place_tower("SUBMARINE", "SUBMARINE_1_LOCATION")  # 8.5
