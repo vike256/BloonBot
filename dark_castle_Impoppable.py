@@ -449,8 +449,8 @@ def Main_Game():
     Bank_Collection("BANANA_FARM_1_LOCATION")
     Null_Round(30) # Round 58
     Powers_Round(30) # Round 59
-    Null_Round(30, "BANANA_FARM_3_LOCATION") # Round 60
-    Null_Round(30, "BANANA_FARM_3_LOCATION") # Round 61
+    Null_Round(30) # Round 60
+    Null_Round(30) # Round 61
     Bank_Collection("BANANA_FARM_2_LOCATION")
     upgrade_tower('3', "SUBMARINE_1_LOCATION") # Sub_1 205
     upgrade_tower('3', "SUBMARINE_2_LOCATION") # Sub_2 204
