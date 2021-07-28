@@ -98,7 +98,7 @@ button_positions = {  # Creates a dictionary of all positions needed for monkeys
 
 def game_click(location):
     pyautogui.click(button_positions[location])
-    sleep(0..15)
+    sleep(0.15)
 
 
 def menu_click(location):
