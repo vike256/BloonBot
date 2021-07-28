@@ -347,7 +347,7 @@ def Powers_Farming_Round(length, farm_position):
 def Round_100():
     press_key("space")  # Start the round
     press_key("6") # Use CTA
-    Level_Up_Check_End(20)
+    Level_Up_Check_End(16)
     game_click("EVENT_EXIT")
 
 
@@ -491,10 +491,10 @@ def Main_Game():
     Null_Round(4) # Round 76
     Null_Round(25) # Round 77
     Bank_Collection("BANANA_FARM_3_LOCATION")
-    Powers_Round(50) # Round 78
-    Null_Round(50) # Round 79
-    Powers_Round(50) # Round 80
-    Null_Round(50) # Round 81
+    Powers_Round(36) # Round 78
+    Null_Round(29) # Round 79
+    Powers_Round(16) # Round 80
+    Null_Round(20) # Round 81
     Bank_Collection("BANANA_FARM_1_LOCATION")
     Bank_Collection("BANANA_FARM_4_LOCATION")
     upgrade_tower('1', "ALCHEMIST_LOCATION") # alch 501
@@ -504,9 +504,9 @@ def Main_Game():
     upgrade_tower('3', "SUBMARINE_3_LOCATION")
     upgrade_tower('3', "SUBMARINE_3_LOCATION")
     upgrade_tower('3', "SUBMARINE_3_LOCATION")
-    Powers_Round(50) # Round 82
+    Powers_Round(22) # Round 82
     upgrade_tower('3', "SUBMARINE_3_LOCATION")
-    Null_Round(50) # Round 83
+    Null_Round(25) # Round 83
     place_tower("SUBMARINE", "SUBMARINE_4_LOCATION")
     upgrade_tower('1', "SUBMARINE_4_LOCATION")
     upgrade_tower('1', "SUBMARINE_4_LOCATION")
@@ -514,8 +514,8 @@ def Main_Game():
     upgrade_tower('3', "SUBMARINE_4_LOCATION")
     upgrade_tower('3', "SUBMARINE_4_LOCATION")
     upgrade_tower('3', "SUBMARINE_4_LOCATION")
-    Null_Round(50) # Round 84
-    Null_Round(50) # Round 85
+    Null_Round(17) # Round 84
+    Null_Round(15) # Round 85
     Bank_Collection("BANANA_FARM_2_LOCATION")
     place_tower("SUBMARINE", "SUBMARINE_5_LOCATION")
     upgrade_tower('1', "SUBMARINE_5_LOCATION")
@@ -531,8 +531,8 @@ def Main_Game():
     upgrade_tower('3', "SUBMARINE_6_LOCATION")
     upgrade_tower('3', "SUBMARINE_6_LOCATION")
     upgrade_tower('3', "SUBMARINE_6_LOCATION")
-    Null_Round(50) # Round 86
-    Null_Round(50) # Round 87
+    Null_Round(15) # Round 86
+    Null_Round(16) # Round 87
     place_tower("SUBMARINE", "SUBMARINE_7_LOCATION")
     upgrade_tower('1', "SUBMARINE_7_LOCATION")
     upgrade_tower('1', "SUBMARINE_7_LOCATION")
@@ -540,21 +540,21 @@ def Main_Game():
     upgrade_tower('3', "SUBMARINE_7_LOCATION")
     upgrade_tower('3', "SUBMARINE_7_LOCATION")
     upgrade_tower('3', "SUBMARINE_7_LOCATION")
-    Null_Round(50) # Round 88
-    Null_Round(50) # Round 89
+    Null_Round(16) # Round 88
+    Null_Round(15) # Round 89
     Bank_Collection("BANANA_FARM_3_LOCATION")
     upgrade_tower('2', "VILLAGE_LOCATION") # village 210
     upgrade_tower('2', "VILLAGE_LOCATION") # village 220
     upgrade_tower('2', "VILLAGE_LOCATION") # village 230
-    Null_Round(50) # Round 90
-    Null_Round(50) # Round 91
-    Null_Round(50) # Round 92
-    Null_Round(50) # Round 93
+    Null_Round(7) # Round 90
+    Null_Round(13) # Round 91
+    Null_Round(19) # Round 92
+    Null_Round(14) # Round 93
     Bank_Collection("BANANA_FARM_1_LOCATION")
     Bank_Collection("BANANA_FARM_4_LOCATION")
     upgrade_tower('2', "VILLAGE_LOCATION") # village 240
-    Null_Round(50) # Round 94
-    Null_Round(50) # Round 95
+    Null_Round(17) # Round 94
+    Null_Round(22) # Round 95
     place_tower("GLUE", "GLUE_MONKEY_1_LOCATION")
     upgrade_tower('2', "GLUE_MONKEY_1_LOCATION") # glue_1 010
     upgrade_tower('2', "GLUE_MONKEY_1_LOCATION") # glue_1 020
@@ -567,8 +567,8 @@ def Main_Game():
     upgrade_tower('3', "GLUE_MONKEY_2_LOCATION") # glue_2 021
     upgrade_tower('3', "GLUE_MONKEY_2_LOCATION") # glue_2 022
     upgrade_tower('3', "GLUE_MONKEY_2_LOCATION") # glue_2 023
-    Null_Round(50) # Round 96
-    Null_Round(50) # Round 97
+    Null_Round(26) # Round 96
+    Null_Round(15) # Round 97
     Bank_Collection("BANANA_FARM_2_LOCATION")
     upgrade_tower('1', "SPIKE_FACTORY_LOCATION")
     upgrade_tower('1', "SPIKE_FACTORY_LOCATION")
@@ -576,8 +576,8 @@ def Main_Game():
     upgrade_tower('1', "SPIKE_FACTORY_LOCATION")
     upgrade_tower('2', "SPIKE_FACTORY_LOCATION")
     upgrade_tower('2', "SPIKE_FACTORY_LOCATION") # spike factory to 420
-    Null_Round(50) # Round 98
-    Powers_Round(50) # Round 99
+    Null_Round(20) # Round 98
+    Powers_Round(8) # Round 99
     Round_100()# Round 100
     
 
