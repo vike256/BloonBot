@@ -205,7 +205,7 @@ def Level_Up_Check_End(seconds):
 
     global overtime
     overtime = 0
-    roundover = true
+    roundover = True
 
     t_end = time.time() + seconds
 
@@ -297,7 +297,7 @@ def Level_Up_Check_Farm_End(seconds, position):
 
     global overtime
     overtime = 0
-    roundover = true
+    roundover = True
 
     t_end = time.time() + seconds
 
