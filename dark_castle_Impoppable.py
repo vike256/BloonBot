@@ -324,7 +324,7 @@ def Powers_Round(length):
 
 def Null_Farming_Round(length, farm_position):
     press_key("space")  # Start the round
-    click(farm_position)
+    move_mouse(farm_position)
     Level_Up_Check_End(length)
 
 
@@ -332,7 +332,7 @@ def Powers_Farming_Round(length, farm_position):
     press_key("space")  # Start the round
     press_key("4") # Use Brambles
     press_key("5") # Use Wall of Trees
-    click(farm_position)
+    move_mouse(farm_position)
     Level_Up_Check_End(length)
 
 
