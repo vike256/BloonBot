@@ -243,7 +243,7 @@ def Level_Up_Check_End(seconds):
 
 
         roundcheck = pyautogui.locateOnScreen(startround_path, grayscale=True, confidence=0.9)
-        if roundcheck != none:
+        if roundcheck != None:
             roundover = false
 
     overtime = time.time() - t_end
@@ -336,7 +336,7 @@ def Level_Up_Check_Farm_End(seconds, position):
             sleep(0.2)
 
         roundcheck = pyautogui.locateOnScreen(startround_path, grayscale=True, confidence=0.9)
-        if roundcheck != none:
+        if roundcheck != None:
             roundover = false
 
     overtime = time.time() - t_end
