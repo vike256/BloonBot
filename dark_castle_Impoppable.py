@@ -100,7 +100,7 @@ def click(location):
 
 
 def move_mouse(location):
-    pyautogui.moveTo(button_positions[location])
+    pyautogui.moveTo(location)
     time.sleep(0.5)
 
 
