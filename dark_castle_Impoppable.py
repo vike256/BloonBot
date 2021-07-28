@@ -454,8 +454,8 @@ def Main_Game():
     sleep(2)
 
     print(f'{Fore.YELLOW}Prepping Field.')
-
-    place_tower("DART", "DART_MONKEY_lOCATION")
+    click("EVENT_EXIT")
+    place_tower("DART", "DART_MONKEY_LOCATION")
     place_tower("SUBMARINE", "SUBMARINE_1_LOCATION")
     
     press_key("space")  # Start the game
