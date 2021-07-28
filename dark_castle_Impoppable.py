@@ -19,7 +19,7 @@ menu_path = "pictures\\menu.png"
 event_path = "pictures\\event.png"
 obyn_hero_path = "pictures\\obyn.png"
 next_path = "pictures\\next.png"
-startround_path = "pictures\\startround.png"
+# startround_path = "pictures\\startround.png"
 
 monkeys = {
     "DART": "Q",
@@ -241,10 +241,11 @@ def Level_Up_Check_End(seconds):
         else:
             sleep(0.2)
 
-
+        """
         roundcheck = pyautogui.locateOnScreen(startround_path, grayscale=True, confidence=0.9)
         if roundcheck != None:
-            roundover = False
+            roundover = False\
+        """
 
     overtime = time.time() - t_end
 
@@ -334,10 +335,11 @@ def Level_Up_Check_Farm_End(seconds, position):
             print(f'{Fore.GREEN}Notification kyssed.')
         else:
             sleep(0.2)
-
+        """
         roundcheck = pyautogui.locateOnScreen(startround_path, grayscale=True, confidence=0.9)
         if roundcheck != None:
             roundover = False
+        """
 
     overtime = time.time() - t_end
 
