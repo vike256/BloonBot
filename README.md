@@ -58,8 +58,11 @@ Glue Monkey         | <ul>0-2-3
 Monkey Knowledges:
 ----------------
 More Cash          - Increase Starting Cash by 200. [Without this the Obyn spawn can't be completed and thus you lose the round]
+
 Big Bloon Sabotage - All MOAB-Class Bloons spawn in a partially damaged state. [Without this your rounds will take longer and might go beyond the timer]
+
 Bigger Banks       - Monkey Banks can hold 2500 extra money. [Without this, your banks will sit at 7000 for 2 to 3 rounds without being picked up]
+
 Other MKs of import will already be had if you have the MKs above.
 
 ## Compatibility
