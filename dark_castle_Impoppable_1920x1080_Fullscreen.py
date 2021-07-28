@@ -90,23 +90,24 @@ button_positions = {  # Creates a dictionary of all positions needed for monkeys
     "SELECT_OBYN": [747, 972],
     "CONFIRM_HERO": [641, 670],
     "COLLECT_LEFT": [1390, 375],
-    "COLLECT_RIGHT": [160, 370]
+    "COLLECT_RIGHT": [160, 370],
+    "BLANK_POSITION": [500, 200]
 }
 
 
 def click(location):
     pyautogui.click(button_positions[location])
-    sleep(0.5)
+    sleep(0.25)
 
 
 def move_mouse(location):
     pyautogui.moveTo(location)
-    time.sleep(0.5)
+    time.sleep(0.25)
 
 
 def press_key(key):
     pyautogui.press(key)
-    time.sleep(0.5)
+    time.sleep(0.25)
 
 
 def menu_check():
@@ -144,7 +145,7 @@ def place_tower(tower, location):
     press_key(monkeys[tower])
     pyautogui.click()
     print(f'{Fore.CYAN}' + tower + ' placed.')
-    sleep(0.5)
+    sleep(0.2)
 
 
 def upgrade_tower(path, location):
@@ -156,7 +157,7 @@ def upgrade_tower(path, location):
     time.sleep(1)
     press_key("esc")
     print(f'{Fore.CYAN}Path ' + path + ' upgraded.')
-    sleep(0.5)
+    sleep(0.2)
 
 
 def Level_Up_Check(seconds):
@@ -305,9 +306,10 @@ def Start_Select_Map():
 def Bank_Collection(position):
     click(position)
     click("COLLECT_LEFT")
+    click("BLANK_POSITION")
     click(position)
     click("COLLECT_RIGHT")
-    click(position)
+    click("BLANK_POSITION")
 
 
 def Null_Round(length):
@@ -450,7 +452,7 @@ def Main_Game():
     Null_Round(20) # Round 58
     Powers_Round(12) # Round 59
     Null_Round(12) # Round 60
-    Null_Round(30) # Round 61
+    Null_Round(10) # Round 61
     Bank_Collection("BANANA_FARM_2_LOCATION")
     upgrade_tower('3', "SUBMARINE_1_LOCATION") # Sub_1 205
     upgrade_tower('3', "SUBMARINE_2_LOCATION") # Sub_2 204
