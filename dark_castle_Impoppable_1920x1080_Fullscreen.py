@@ -98,7 +98,7 @@ button_positions = {  # Creates a dictionary of all positions needed for monkeys
 
 def game_click(location):
     pyautogui.click(button_positions[location])
-    sleep(0.25)
+    sleep(0..15)
 
 
 def menu_click(location):
@@ -145,25 +145,25 @@ def hero_obyn_check():
 
 def place_tower(tower, location):
 
-    Level_Up_Check(.8)
+    Level_Up_Check(.5)
     print(f'{Fore.CYAN}Placing ' + tower + '...')
     move_mouse(button_positions[location])
     press_key(monkeys[tower])
     pyautogui.click()
     print(f'{Fore.CYAN}' + tower + ' placed.')
-    sleep(0.5)
+    sleep(0.2)
 
 
 def upgrade_tower(path, location):
 
-    Level_Up_Check(0.8)
+    Level_Up_Check(0.5)
     print(f'{Fore.CYAN}Upgrading tower path ' + path + '...')
     game_click(location)
     press_key(path)
     time.sleep(0.5)
     press_key("esc")
     print(f'{Fore.CYAN}Path ' + path + ' upgraded.')
-    sleep(0.5)
+    sleep(0.2)
 
 
 def Level_Up_Check(seconds):
@@ -350,8 +350,9 @@ def Powers_Farming_Round(length, farm_position):
 
 def Round_100():
     press_key("space")  # Start the round
+    sleep(7)
     press_key("6") # Use CTA
-    Level_Up_Check_End(16)
+    Level_Up_Check_End(9)
     game_click("EVENT_EXIT")
     game_click("EVENT_EXIT")
     game_click("EVENT_EXIT")
