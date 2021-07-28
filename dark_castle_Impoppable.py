@@ -203,17 +203,16 @@ def Level_Up_Check(seconds):
     overtime = time.time() - t_end
 
 
-def Level_Up_Check_End(seconds, position):
+def Level_Up_Check_End(seconds):
 
     global overtime
     overtime = 0
+    roundover = true
 
     t_end = time.time() + seconds
 
-    while time.time() < t_end:
+    while time.time() < t_end and roundover:
         found = pyautogui.locateOnScreen(path, grayscale=True, confidence=0.9)
-
-        click(position)
 
         if found != None:
             print(f'{Fore.RED}Level Up notification detected. Getting rid of it...')
@@ -243,6 +242,11 @@ def Level_Up_Check_End(seconds, position):
             print(f'{Fore.GREEN}Notification kyssed.')
         else:
             sleep(0.2)
+
+
+        roundcheck = pyautogui.locateOnScreen(startround_path, grayscale=True, confidence=0.9)
+        if roundcheck != none
+            roundover = false
 
     overtime = time.time() - t_end
 
@@ -293,14 +297,15 @@ def Level_Up_Check_Farm(seconds, position):
 
 
 
-def Level_Up_Check_Farm(seconds, position):
+def Level_Up_Check_Farm_End(seconds, position):
 
     global overtime
     overtime = 0
+    roundover = true
 
     t_end = time.time() + seconds
 
-    while time.time() < t_end:
+    while time.time() < t_end and roundover:
         found = pyautogui.locateOnScreen(path, grayscale=True, confidence=0.9)
 
         click(position)
@@ -333,6 +338,10 @@ def Level_Up_Check_Farm(seconds, position):
             print(f'{Fore.GREEN}Notification kyssed.')
         else:
             sleep(0.2)
+
+        roundcheck = pyautogui.locateOnScreen(startround_path, grayscale=True, confidence=0.9)
+        if roundcheck != none
+            roundover = false
 
     overtime = time.time() - t_end
 
