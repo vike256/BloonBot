@@ -449,27 +449,27 @@ def Main_Game():
     print(f'{Fore.CYAN}Game started.')
 
     Null_Round(10) # Round 6
-    Null_Round(10) # Round 7
+    Null_Round(12) # Round 7
     place_tower("HERO", "HERO_LOCATION")
-    Null_Round(10) # Round 8
-    Null_Round(10) # Round 9
-    Null_Round(10) # Round 10
+    Null_Round(14) # Round 8
+    Null_Round(16) # Round 9
+    Null_Round(18) # Round 10
     upgrade_tower('3', "SUBMARINE_1_LOCATION") # Sub_1 001
     upgrade_tower('1', "SUBMARINE_1_LOCATION") # Sub_1 101
-    Null_Round(10) # Round 11
-    Null_Round(10) # Round 12
-    Null_Round(10) # Round 13
+    Null_Round(20) # Round 11
+    Null_Round(20) # Round 12
+    Null_Round(20) # Round 13
     upgrade_tower('1', "SUBMARINE_1_LOCATION") # Sub_1 201
-    Null_Round(10) # Round 14
-    Null_Round(10) # Round 15
-    Null_Round(10) # Round 16
-    Null_Round(10) # Round 17
-    Null_Round(10) # Round 18
+    Null_Round(20) # Round 14
+    Null_Round(20) # Round 15
+    Null_Round(20) # Round 16
+    Null_Round(20) # Round 17
+    Null_Round(20) # Round 18
     upgrade_tower('3', "SUBMARINE_1_LOCATION") # Sub_1 202
-    Null_Round(10) # Round 19
+    Null_Round(20) # Round 19
     upgrade_tower('3', "DART_MONKEY_LOCATION") # Dart Monkey 001
     upgrade_tower('3', "DART_MONKEY_LOCATION") # Dart Monkey 002
-    Null_Round(10) # Round 20
+    Null_Round(20) # Round 20
     Null_Round(15) # Round 21
     Null_Round(15) # Round 22
     Null_Round(15) # Round 23
