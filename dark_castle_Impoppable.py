@@ -250,99 +250,6 @@ def Level_Up_Check_End(seconds):
     overtime = time.time() - t_end
 
 
-def Level_Up_Check_Farm(seconds, position):
-
-    global overtime
-    overtime = 0
-
-    t_end = time.time() + seconds
-
-    while time.time() < t_end:
-        found = pyautogui.locateOnScreen(path, grayscale=True, confidence=0.9)
-
-        click(position)
-
-        if found != None:
-            print(f'{Fore.RED}Level Up notification detected. Getting rid of it...')
-            click("LEFT_INSTA")  # Accept lvl
-            time.sleep(1)
-            click("LEFT_INSTA")  # Accept knoledge
-            time.sleep(1)
-            '''
-            click("LEFT_INSTA")  # unlock insta
-            time.sleep(1)
-            click("LEFT_INSTA")  # collect insta
-            time.sleep(1)
-
-            click("MID_INSTA")  # unlock insta
-            time.sleep(1)
-            click("MID_INSTA")  # collect insta
-            time.sleep(1)
-
-            click("RIGHT_INSTA")  # unlock r insta
-            time.sleep(1)
-            click("RIGHT_INSTA")  # collect r insta
-            time.sleep(2)
-            press_key("esc")
-            sleep(0.5)
-            '''
-            press_key("space")  # Start the game
-            print(f'{Fore.GREEN}Notification kyssed.')
-        else:
-            sleep(0.2)
-
-    overtime = time.time() - t_end
-
-
-def Level_Up_Check_Farm_End(seconds, position):
-
-    global overtime
-    overtime = 0
-    roundover = True
-
-    t_end = time.time() + seconds
-
-    while time.time() < t_end and roundover:
-        found = pyautogui.locateOnScreen(path, grayscale=True, confidence=0.9)
-
-        click(position)
-
-        if found != None:
-            print(f'{Fore.RED}Level Up notification detected. Getting rid of it...')
-            click("LEFT_INSTA")  # Accept lvl
-            time.sleep(1)
-            click("LEFT_INSTA")  # Accept knoledge
-            time.sleep(1)
-            '''
-            click("LEFT_INSTA")  # unlock insta
-            time.sleep(1)
-            click("LEFT_INSTA")  # collect insta
-            time.sleep(1)
-
-            click("MID_INSTA")  # unlock insta
-            time.sleep(1)
-            click("MID_INSTA")  # collect insta
-            time.sleep(1)
-
-            click("RIGHT_INSTA")  # unlock r insta
-            time.sleep(1)
-            click("RIGHT_INSTA")  # collect r insta
-            time.sleep(2)
-            press_key("esc")
-            sleep(0.5)
-            '''
-            press_key("space")  # Start the game
-            print(f'{Fore.GREEN}Notification kyssed.')
-        else:
-            sleep(0.2)
-        """
-        roundcheck = pyautogui.locateOnScreen(startround_path, grayscale=True, confidence=0.9)
-        if roundcheck != None:
-            roundover = False
-        """
-
-    overtime = time.time() - t_end
-
 
 def event_check():
 
@@ -417,14 +324,16 @@ def Powers_Round(length):
 
 def Null_Farming_Round(length, farm_position):
     press_key("space")  # Start the round
-    Level_Up_Check_Farm_End(length, farm_position)
+    click(farm_position)
+    Level_Up_Check_End(length)
 
 
 def Powers_Farming_Round(length, farm_position):
     press_key("space")  # Start the round
     press_key("4") # Use Brambles
     press_key("5") # Use Wall of Trees
-    Level_Up_Check_Farm_End(length, farm_position)
+    click(farm_position)
+    Level_Up_Check_End(length)
 
 
 def Round_100():
