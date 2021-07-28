@@ -98,7 +98,7 @@ button_positions = {  # Creates a dictionary of all positions needed for monkeys
 
 def game_click(location):
     pyautogui.click(button_positions[location])
-    sleep(0.15)
+    sleep(0.2)
 
 
 def menu_click(location):
@@ -151,7 +151,7 @@ def place_tower(tower, location):
     press_key(monkeys[tower])
     pyautogui.click()
     print(f'{Fore.CYAN}' + tower + ' placed.')
-    sleep(0.2)
+    sleep(0.4)
 
 
 def upgrade_tower(path, location):
@@ -163,7 +163,7 @@ def upgrade_tower(path, location):
     time.sleep(0.5)
     press_key("esc")
     print(f'{Fore.CYAN}Path ' + path + ' upgraded.')
-    sleep(0.2)
+    sleep(0.4)
 
 
 def Level_Up_Check(seconds):
@@ -253,6 +253,8 @@ def Level_Up_Check_End(seconds):
         if roundcheck != None:
             roundover = False\
         """
+    game_click("MIDDLE_POSITION")
+    game_click("MIDDLE_POSITION")
     game_click("MIDDLE_POSITION")
     game_click("MIDDLE_POSITION")
     game_click("MIDDLE_POSITION")
