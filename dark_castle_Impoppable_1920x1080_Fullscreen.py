@@ -91,7 +91,8 @@ button_positions = {  # Creates a dictionary of all positions needed for monkeys
     "CONFIRM_HERO": [641, 670],
     "COLLECT_LEFT": [1390, 375],
     "COLLECT_RIGHT": [160, 370],
-    "BLANK_POSITION": [500, 200]
+    "BLANK_POSITION": [500, 200],
+    "MIDDLE_POSITION": [775, 560]
 }
 
 
@@ -252,7 +253,7 @@ def Level_Up_Check_End(seconds):
         if roundcheck != None:
             roundover = False\
         """
-
+    move_mouse(button_positions["MIDDLE_POSITION"])
     overtime = time.time() - t_end
 
 
@@ -503,8 +504,8 @@ def Main_Game():
     upgrade_tower('3', "SUBMARINE_3_LOCATION")
     upgrade_tower('3', "SUBMARINE_3_LOCATION")
     upgrade_tower('3', "SUBMARINE_3_LOCATION")
-    upgrade_tower('3', "SUBMARINE_3_LOCATION")
     Powers_Round(50) # Round 82
+    upgrade_tower('3', "SUBMARINE_3_LOCATION")
     Null_Round(50) # Round 83
     place_tower("SUBMARINE", "SUBMARINE_4_LOCATION")
     upgrade_tower('1', "SUBMARINE_4_LOCATION")
