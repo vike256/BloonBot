@@ -19,6 +19,9 @@ menu_path = "pictures\\menu.png"
 event_path = "pictures\\event.png"
 obyn_hero_path = "pictures\\obyn.png"
 next_path = "pictures\\next.png"
+startround_path = "pictures\\startround.png"
+collect_path = "pictures\\collect.png"
+collect_all_path = "pictures\\collectall.png"
 
 monkeys = {
     "DART": "Q",
@@ -71,7 +74,9 @@ button_positions = {  # Creates a dictionary of all positions needed for monkeys
     "SUBMARINE_4_LOCATION": [1190, 771],
     "SUBMARINE_5_LOCATION": [1253, 725],
     "SUBMARINE_6_LOCATION": [1100, 846],
-    "SUBMARINE_6_LOCATION": [1190, 842],
+    "SUBMARINE_7_LOCATION": [1190, 842],
+    "GLUE_MONKEY_1": [429, 295],
+    "GLUE_MONKEY_2": [460, 794],
     "VICTORY_CONTINUE": [962, 911],
     "VICTORY_HOME": [793, 851],  # 790, 850
     "EVENT_COLLECTION": [959, 683],  # 960 ,910
@@ -165,6 +170,140 @@ def Level_Up_Check(seconds):
 
     while time.time() < t_end:
         found = pyautogui.locateOnScreen(path, grayscale=True, confidence=0.9)
+
+        if found != None:
+            print(f'{Fore.RED}Level Up notification detected. Getting rid of it...')
+            click("LEFT_INSTA")  # Accept lvl
+            time.sleep(1)
+            click("LEFT_INSTA")  # Accept knoledge
+            time.sleep(1)
+            '''
+            click("LEFT_INSTA")  # unlock insta
+            time.sleep(1)
+            click("LEFT_INSTA")  # collect insta
+            time.sleep(1)
+
+            click("MID_INSTA")  # unlock insta
+            time.sleep(1)
+            click("MID_INSTA")  # collect insta
+            time.sleep(1)
+
+            click("RIGHT_INSTA")  # unlock r insta
+            time.sleep(1)
+            click("RIGHT_INSTA")  # collect r insta
+            time.sleep(2)
+            press_key("esc")
+            sleep(0.5)
+            '''
+            press_key("space")  # Start the game
+            print(f'{Fore.GREEN}Notification kyssed.')
+        else:
+            sleep(0.2)
+
+    overtime = time.time() - t_end
+
+
+def Level_Up_Check_End(seconds, position):
+
+    global overtime
+    overtime = 0
+
+    t_end = time.time() + seconds
+
+    while time.time() < t_end:
+        found = pyautogui.locateOnScreen(path, grayscale=True, confidence=0.9)
+
+        click(position)
+
+        if found != None:
+            print(f'{Fore.RED}Level Up notification detected. Getting rid of it...')
+            click("LEFT_INSTA")  # Accept lvl
+            time.sleep(1)
+            click("LEFT_INSTA")  # Accept knoledge
+            time.sleep(1)
+            '''
+            click("LEFT_INSTA")  # unlock insta
+            time.sleep(1)
+            click("LEFT_INSTA")  # collect insta
+            time.sleep(1)
+
+            click("MID_INSTA")  # unlock insta
+            time.sleep(1)
+            click("MID_INSTA")  # collect insta
+            time.sleep(1)
+
+            click("RIGHT_INSTA")  # unlock r insta
+            time.sleep(1)
+            click("RIGHT_INSTA")  # collect r insta
+            time.sleep(2)
+            press_key("esc")
+            sleep(0.5)
+            '''
+            press_key("space")  # Start the game
+            print(f'{Fore.GREEN}Notification kyssed.')
+        else:
+            sleep(0.2)
+
+    overtime = time.time() - t_end
+
+
+
+def Level_Up_Check_Farm(seconds, position):
+
+    global overtime
+    overtime = 0
+
+    t_end = time.time() + seconds
+
+    while time.time() < t_end:
+        found = pyautogui.locateOnScreen(path, grayscale=True, confidence=0.9)
+
+        click(position)
+
+        if found != None:
+            print(f'{Fore.RED}Level Up notification detected. Getting rid of it...')
+            click("LEFT_INSTA")  # Accept lvl
+            time.sleep(1)
+            click("LEFT_INSTA")  # Accept knoledge
+            time.sleep(1)
+            '''
+            click("LEFT_INSTA")  # unlock insta
+            time.sleep(1)
+            click("LEFT_INSTA")  # collect insta
+            time.sleep(1)
+
+            click("MID_INSTA")  # unlock insta
+            time.sleep(1)
+            click("MID_INSTA")  # collect insta
+            time.sleep(1)
+
+            click("RIGHT_INSTA")  # unlock r insta
+            time.sleep(1)
+            click("RIGHT_INSTA")  # collect r insta
+            time.sleep(2)
+            press_key("esc")
+            sleep(0.5)
+            '''
+            press_key("space")  # Start the game
+            print(f'{Fore.GREEN}Notification kyssed.')
+        else:
+            sleep(0.2)
+
+    overtime = time.time() - t_end
+
+
+
+def Level_Up_Check_Farm(seconds, position):
+
+    global overtime
+    overtime = 0
+
+    t_end = time.time() + seconds
+
+    while time.time() < t_end:
+        found = pyautogui.locateOnScreen(path, grayscale=True, confidence=0.9)
+
+        click(position)
 
         if found != None:
             print(f'{Fore.RED}Level Up notification detected. Getting rid of it...')
