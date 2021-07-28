@@ -250,7 +250,6 @@ def Level_Up_Check_End(seconds):
     overtime = time.time() - t_end
 
 
-
 def Level_Up_Check_Farm(seconds, position):
 
     global overtime
@@ -293,7 +292,6 @@ def Level_Up_Check_Farm(seconds, position):
             sleep(0.2)
 
     overtime = time.time() - t_end
-
 
 
 def Level_Up_Check_Farm_End(seconds, position):
@@ -396,14 +394,12 @@ def Start_Select_Map():
     print(f'{Fore.CYAN}Map selected.')
 
 
-
 def Null_Round():
     press_key("space")  # Start the round
     outputString = "Round {} started".format(current_round)
     print(outputString)
     current_round += 1
-    Level_Up_Check_End()
-
+    Level_Up_Check_End(100)
 
 
 def Powers_Round():
@@ -413,28 +409,25 @@ def Powers_Round():
     outputString = "Round {} started".format(current_round)
     print(outputString)
     current_round += 1
-    Level_Up_Check_End()
+    Level_Up_Check_End(100)
 
 
-
-def Null_Farming_Round():
+def Null_Farming_Round(farm_position):
     press_key("space")  # Start the round
     outputString = "Round {} started".format(current_round)
     print(outputString)
     current_round += 1
-    Level_Up_Check_Farm_End()
+    Level_Up_Check_Farm_End(100, farm_position)
 
 
-
-def Powers_Farming_Round():
+def Powers_Farming_Round(farm_position):
     press_key("space")  # Start the round
     press_key("4") # Use Brambles
     press_key("5") # Use Wall of Trees
     outputString = "Round {} started".format(current_round)
     print(outputString)
     current_round += 1
-    Level_Up_Check_Farm_End()
-
+    Level_Up_Check_Farm_End(100, farm_position)
 
 
 def Round_100():
@@ -445,9 +438,7 @@ def Round_100():
     press_key("7") # Just in Case you have an extra for some reason
     outputString = "Round {} started".format(current_round)
     print(outputString)
-    current_round += 1
-    Level_Up_Check_End()
-
+    Level_Up_Check_End(20)
 
 
 def Main_Game():
@@ -489,28 +480,28 @@ def Main_Game():
     Null_Round() # Round 25
     Null_Round() # Round 26
     Null_Round() # Round 27
-    Null_Farming_Round() # Round 28
-    Null_Farming_Round() # Round 29
-    Null_Farming_Round() # Round 30
-    Null_Farming_Round() # Round 31
-    Null_Farming_Round() # Round 32
-    Null_Farming_Round() # Round 33
-    Null_Farming_Round() # Round 34
-    Null_Farming_Round() # Round 35
-    Null_Farming_Round() # Round 36
-    Null_Farming_Round() # Round 37
-    Null_Farming_Round() # Round 38
-    Null_Farming_Round() # Round 39
-    Powers_Farming_Round() # Round 40
-    Null_Farming_Round() # Round 41
-    Null_Farming_Round() # Round 42
-    Null_Farming_Round() # Round 43
-    Null_Farming_Round() # Round 44
-    Null_Farming_Round() # Round 45
-    Null_Farming_Round() # Round 46
-    Null_Farming_Round() # Round 47
-    Null_Farming_Round() # Round 48
-    Powers_Farming_Round() # Round 49
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 28
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 29
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 30
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 31
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 32
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 33
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 34
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 35
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 36
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 37
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 38
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 39
+    Powers_Farming_Round(BANANA_FARM_1_LOCATION) # Round 40
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 41
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 42
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 43
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 44
+    Null_Farming_Round(BANANA_FARM_1_LOCATION) # Round 45
+    Null_Farming_Round(BANANA_FARM_2_LOCATION) # Round 46
+    Null_Farming_Round(BANANA_FARM_2_LOCATION) # Round 47
+    Null_Farming_Round(BANANA_FARM_2_LOCATION) # Round 48
+    Powers_Farming_Round(BANANA_FARM_2_LOCATION) # Round 49
     Null_Round() # Round 50
     Null_Round() # Round 51
     Null_Round() # Round 52
@@ -521,16 +512,16 @@ def Main_Game():
     Null_Round() # Round 57
     Null_Round() # Round 58
     Powers_Round() # Round 59
-    Null_Farming_Round() # Round 60
-    Null_Farming_Round() # Round 61
-    Null_Farming_Round() # Round 62
-    Powers_Farming_Round() # Round 63
-    Null_Farming_Round() # Round 64
-    Null_Farming_Round() # Round 65
-    Null_Farming_Round() # Round 66
-    Null_Farming_Round() # Round 67
-    Null_Farming_Round() # Round 68
-    Null_Farming_Round() # Round 69
+    Null_Farming_Round(BANANA_FARM_3_LOCATION) # Round 60
+    Null_Farming_Round(BANANA_FARM_3_LOCATION) # Round 61
+    Null_Farming_Round(BANANA_FARM_3_LOCATION) # Round 62
+    Powers_Farming_Round(BANANA_FARM_3_LOCATION) # Round 63
+    Null_Farming_Round(BANANA_FARM_3_LOCATION) # Round 64
+    Null_Farming_Round(BANANA_FARM_3_LOCATION) # Round 65
+    Null_Farming_Round(BANANA_FARM_4_LOCATION) # Round 66
+    Null_Farming_Round(BANANA_FARM_4_LOCATION) # Round 67
+    Null_Farming_Round(BANANA_FARM_4_LOCATION) # Round 68
+    Null_Farming_Round(BANANA_FARM_4_LOCATION) # Round 69
     Null_Round() # Round 70
     Null_Round() # Round 71
     Null_Round() # Round 72
