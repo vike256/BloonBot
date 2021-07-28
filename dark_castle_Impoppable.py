@@ -10,7 +10,6 @@ from colorama import Fore, Back, Style
 
 colorama.init(autoreset=True)
 
-current_round = 6
 overtime = 0
 
 path = "pictures\\levelup.png"
@@ -404,9 +403,6 @@ def Bank_Collection(position):
 
 def Null_Round():
     press_key("space")  # Start the round
-    outputString = "Round {} started".format(current_round)
-    print(outputString)
-    current_round += 1
     Level_Up_Check_End(100)
 
 
@@ -414,17 +410,11 @@ def Powers_Round():
     press_key("space")  # Start the round
     press_key("4") # Use Brambles
     press_key("5") # Use Wall of Trees
-    outputString = "Round {} started".format(current_round)
-    print(outputString)
-    current_round += 1
     Level_Up_Check_End(100)
 
 
 def Null_Farming_Round(farm_position):
     press_key("space")  # Start the round
-    outputString = "Round {} started".format(current_round)
-    print(outputString)
-    current_round += 1
     Level_Up_Check_Farm_End(100, farm_position)
 
 
@@ -432,9 +422,6 @@ def Powers_Farming_Round(farm_position):
     press_key("space")  # Start the round
     press_key("4") # Use Brambles
     press_key("5") # Use Wall of Trees
-    outputString = "Round {} started".format(current_round)
-    print(outputString)
-    current_round += 1
     Level_Up_Check_Farm_End(100, farm_position)
 
 
@@ -444,8 +431,6 @@ def Round_100():
     press_key("5") # Use Wall of Trees
     press_key("6") # Use CTA
     press_key("7") # Just in Case you have an extra for some reason
-    outputString = "Round {} started".format(current_round)
-    print(outputString)
     Level_Up_Check_End(20)
 
 
