@@ -95,9 +95,14 @@ button_positions = {  # Creates a dictionary of all positions needed for monkeys
 }
 
 
-def click(location):
+def game_click(location):
     pyautogui.click(button_positions[location])
-    sleep(0.25)
+    sleep(0.1)
+
+
+def menu_click(location):
+    pyautogui.click(button_positions[location])
+    sleep(0.5)
 
 
 def move_mouse(location):
@@ -107,7 +112,7 @@ def move_mouse(location):
 
 def press_key(key):
     pyautogui.press(key)
-    time.sleep(0.25)
+    time.sleep(0.1)
 
 
 def menu_check():
@@ -130,34 +135,34 @@ def hero_obyn_check():
 
     if found == None:
         print(f'{Fore.CYAN}Not found. Selecting OBYN...')
-        click("HERO_SELECT")
-        click("SELECT_OBYN")
-        click("CONFIRM_HERO")
+        menu_click("HERO_SELECT")
+        menu_click("SELECT_OBYN")
+        menu_click("CONFIRM_HERO")
         press_key("esc")
         print(f'{Fore.CYAN}OBYN selected.')
 
 
 def place_tower(tower, location):
 
-    Level_Up_Check(1)
+    Level_Up_Check(0.3)
     print(f'{Fore.CYAN}Placing ' + tower + '...')
     move_mouse(button_positions[location])
     press_key(monkeys[tower])
     pyautogui.click()
     print(f'{Fore.CYAN}' + tower + ' placed.')
-    sleep(0.2)
+    sleep(0.1)
 
 
 def upgrade_tower(path, location):
 
-    Level_Up_Check(1)
+    Level_Up_Check(0.3)
     print(f'{Fore.CYAN}Upgrading tower path ' + path + '...')
-    click(location)
+    game_click(location)
     press_key(path)
-    time.sleep(1)
+    time.sleep(0.5)
     press_key("esc")
     print(f'{Fore.CYAN}Path ' + path + ' upgraded.')
-    sleep(0.2)
+    sleep(0.1)
 
 
 def Level_Up_Check(seconds):
@@ -172,9 +177,9 @@ def Level_Up_Check(seconds):
 
         if found != None:
             print(f'{Fore.RED}Level Up notification detected. Getting rid of it...')
-            click("LEFT_INSTA")  # Accept lvl
+            game_click("LEFT_INSTA")  # Accept lvl
             time.sleep(1)
-            click("LEFT_INSTA")  # Accept knoledge
+            game_click("LEFT_INSTA")  # Accept knoledge
             time.sleep(1)
             '''
             click("LEFT_INSTA")  # unlock insta
@@ -215,9 +220,9 @@ def Level_Up_Check_End(seconds):
 
         if found != None:
             print(f'{Fore.RED}Level Up notification detected. Getting rid of it...')
-            click("LEFT_INSTA")  # Accept lvl
+            game_click("LEFT_INSTA")  # Accept lvl
             time.sleep(1)
-            click("LEFT_INSTA")  # Accept knoledge
+            game_click("LEFT_INSTA")  # Accept knoledge
             time.sleep(1)
             '''
             click("LEFT_INSTA")  # unlock insta
@@ -258,34 +263,34 @@ def event_check():
 
     if found != None:
         print(f"{Fore.RED}Event notification detected. Getting rid of it...")
-        click("EVENT_COLLECTION")  # DUE TO EVENT:
+        game_click("EVENT_COLLECTION")  # DUE TO EVENT:
         time.sleep(1)
-        click("LEFT_INSTA")  # unlock insta
+        game_click("LEFT_INSTA")  # unlock insta
         time.sleep(1)
-        click("LEFT_INSTA")  # collect insta
+        game_click("LEFT_INSTA")  # collect insta
         time.sleep(1)
-        click("RIGHT_INSTA")  # unlock r insta
+        game_click("RIGHT_INSTA")  # unlock r insta
         time.sleep(1)
-        click("RIGHT_INSTA")  # collect r insta
+        game_click("RIGHT_INSTA")  # collect r insta
         time.sleep(1)
-        click("F_LEFT_INSTA")
+        game_click("F_LEFT_INSTA")
         time.sleep(1)
-        click("F_LEFT_INSTA")
+        game_click("F_LEFT_INSTA")
         time.sleep(1)
-        click("MID_INSTA")  # unlock insta
+        game_click("MID_INSTA")  # unlock insta
         time.sleep(1)
-        click("MID_INSTA")  # collect insta
+        game_click("MID_INSTA")  # collect insta
         time.sleep(1)
-        click("F_RIGHT_INSTA")
+        game_click("F_RIGHT_INSTA")
         time.sleep(1)
-        click("F_RIGHT_INSTA")
+        game_click("F_RIGHT_INSTA")
         time.sleep(1)
 
         time.sleep(1)
-        click("EVENT_CONTINUE")
+        game_click("EVENT_CONTINUE")
 
         # awe try to click 3 quick times to get out of the event mode, but also if event mode not triggered, to open and close profile quick
-        click("EVENT_EXIT")
+        game_click("EVENT_EXIT")
         print(f'{Fore.GREEN}Event notification kyssed.')
         time.sleep(1)
 
@@ -293,23 +298,23 @@ def event_check():
 def Start_Select_Map():
     menu_check()
     print(f'{Fore.CYAN}Selecting map...')
-    click("HOME_MENU_START")  # Move Mouse and click from Home Menu, Start
-    click("EXPERT_SELECTION")  # Move Mouse to expert and click
-    click("RIGHT_ARROW_SELECTION")  # Move Mouse to arrow and click
-    click("DARK_CASTLE")  # Move Mouse to Dark Castle
-    click("HARD_MODE")  # Move Mouse to select hard mode
-    click("IMPOPPABLE_GAME_MODE")  # Move mouse to select Impoppable mode
-    click("OVERWRITE_SAVE")  # Move mouse to overwrite save if exists
+    menu_click("HOME_MENU_START")  # Move Mouse and click from Home Menu, Start
+    menu_click("EXPERT_SELECTION")  # Move Mouse to expert and click
+    menu_click("RIGHT_ARROW_SELECTION")  # Move Mouse to arrow and click
+    menu_click("DARK_CASTLE")  # Move Mouse to Dark Castle
+    menu_click("HARD_MODE")  # Move Mouse to select hard mode
+    menu_click("IMPOPPABLE_GAME_MODE")  # Move mouse to select Impoppable mode
+    menu_click("OVERWRITE_SAVE")  # Move mouse to overwrite save if exists
     print(f'{Fore.CYAN}Map selected.')
 
 
 def Bank_Collection(position):
-    click(position)
-    click("COLLECT_LEFT")
-    click("BLANK_POSITION")
-    click(position)
-    click("COLLECT_RIGHT")
-    click("BLANK_POSITION")
+    game_click(position)
+    game_click("COLLECT_LEFT")
+    game_click("BLANK_POSITION")
+    game_click(position)
+    game_click("COLLECT_RIGHT")
+    game_click("BLANK_POSITION")
 
 
 def Null_Round(length):
@@ -340,11 +345,9 @@ def Powers_Farming_Round(length, farm_position):
 
 def Round_100():
     press_key("space")  # Start the round
-    press_key("4") # Use Brambles
-    press_key("5") # Use Wall of Trees
     press_key("6") # Use CTA
-    press_key("7") # Just in Case you have an extra for some reason
     Level_Up_Check_End(20)
+    game_click("EVENT_EXIT")
 
 
 def Main_Game():
@@ -352,7 +355,7 @@ def Main_Game():
     sleep(4)
 
     print(f'{Fore.YELLOW}Prepping Field.')
-    click("EVENT_EXIT")
+    game_click("EVENT_EXIT")
     place_tower("DART", "DART_MONKEY_LOCATION")
     place_tower("SUBMARINE", "SUBMARINE_1_LOCATION")
     
@@ -605,7 +608,7 @@ def Exit_Game():
             print(f'{Fore.CYAN}Menu screen found. Continuing...')
             break
         else:
-            click("EVENT_EXIT")
+            menu_click("EVENT_EXIT")
             sleep(3)
 
 # Main
