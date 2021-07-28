@@ -483,11 +483,11 @@ def Main_Game():
     Null_Round(14) # Round 73
     Bank_Collection("BANANA_FARM_2_LOCATION")
     Null_Round(34) # Round 74
-    Null_Round(50) # Round 75
-    Null_Round(50) # Round 76
-    Null_Round(50) # Round 77
+    Null_Round(18) # Round 75
+    Null_Round(4) # Round 76
+    Null_Round(25) # Round 77
     Bank_Collection("BANANA_FARM_3_LOCATION")
-    Null_Round(50) # Round 78
+    Powers_Round(50) # Round 78
     Null_Round(50) # Round 79
     Powers_Round(50) # Round 80
     Null_Round(50) # Round 81
