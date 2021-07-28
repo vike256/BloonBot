@@ -222,7 +222,7 @@ def Level_Up_Check_End(seconds):
         if found != None:
             print(f'{Fore.RED}Level Up notification detected. Getting rid of it...')
             game_click("LEFT_INSTA")  # Accept lvl
-            time.sleep(1)
+            time.sleep(3)
             game_click("LEFT_INSTA")  # Accept knoledge
             time.sleep(1)
             '''
@@ -253,12 +253,6 @@ def Level_Up_Check_End(seconds):
         if roundcheck != None:
             roundover = False\
         """
-    game_click("MIDDLE_POSITION")
-    game_click("MIDDLE_POSITION")
-    game_click("MIDDLE_POSITION")
-    game_click("MIDDLE_POSITION")
-    game_click("MIDDLE_POSITION")
-    game_click("MIDDLE_POSITION")
     move_mouse(button_positions["MIDDLE_POSITION"])
     overtime = time.time() - t_end
 
