@@ -67,4 +67,4 @@ Other MKs of import will already be had if you have the MKs above.
 
 ## Compatibility
 #### Resolutions supported:  
-* 1920x1080  
+* 1920x1080  [NOTE: Your Desktop Resolution MUST also be set to 1920x1080, or this will not work.]
