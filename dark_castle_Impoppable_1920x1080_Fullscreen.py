@@ -201,7 +201,7 @@ def Level_Up_Check(seconds):
             press_key("esc")
             sleep(0.5)
             '''
-            press_key("space")  # Start the game
+            # press_key("space")  # Start the game
             print(f'{Fore.GREEN}Notification kyssed.')
         else:
             sleep(0.2)
@@ -247,7 +247,7 @@ def Level_Up_Check_End(seconds):
             press_key("esc")
             sleep(0.5)
             '''
-            press_key("space")  # Start the game
+            # press_key("space")  # Start the game
             print(f'{Fore.GREEN}Notification kyssed.')
         else:
             sleep(0.2)
@@ -325,7 +325,6 @@ def Bank_Collection(position):
 def Null_Round(length):
     press_key("space")  # Start the round
     Level_Up_Check_End(length)
-    Level_Up_Check(1)
 
 
 def Powers_Round(length):
@@ -333,14 +332,12 @@ def Powers_Round(length):
     press_key("4") # Use Brambles
     press_key("5") # Use Wall of Trees
     Level_Up_Check_End(length)
-    Level_Up_Check(1)
 
 
 def Null_Farming_Round(length, farm_position):
     press_key("space")  # Start the round
     move_mouse(button_positions[farm_position])
     Level_Up_Check_End(length)
-    Level_Up_Check(1)
 
 
 def Powers_Farming_Round(length, farm_position):
@@ -349,7 +346,6 @@ def Powers_Farming_Round(length, farm_position):
     press_key("5") # Use Wall of Trees
     move_mouse(button_positions[farm_position])
     Level_Up_Check_End(length)
-    Level_Up_Check(1)
 
 
 def Round_100():
@@ -357,7 +353,6 @@ def Round_100():
     sleep(7)
     press_key("6") # Use CTA
     Level_Up_Check_End(9)
-    Level_Up_Check(1)
 
 
 def Main_Game():
