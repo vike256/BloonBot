@@ -322,11 +322,13 @@ def Bank_Collection(position):
 
 
 def Null_Round(length):
+    Level_Up_Check(1)
     press_key("space")  # Start the round
     Level_Up_Check_End(length)
 
 
 def Powers_Round(length):
+    Level_Up_Check(1)
     press_key("space")  # Start the round
     press_key("4") # Use Brambles
     press_key("5") # Use Wall of Trees
@@ -334,12 +336,14 @@ def Powers_Round(length):
 
 
 def Null_Farming_Round(length, farm_position):
+    Level_Up_Check(1)
     press_key("space")  # Start the round
     move_mouse(button_positions[farm_position])
     Level_Up_Check_End(length)
 
 
 def Powers_Farming_Round(length, farm_position):
+    Level_Up_Check(1)
     press_key("space")  # Start the round
     press_key("4") # Use Brambles
     press_key("5") # Use Wall of Trees
@@ -348,6 +352,7 @@ def Powers_Farming_Round(length, farm_position):
 
 
 def Round_100():
+    Level_Up_Check(1)
     press_key("space")  # Start the round
     sleep(7)
     press_key("6") # Use CTA
