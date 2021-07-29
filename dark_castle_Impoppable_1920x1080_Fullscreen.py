@@ -353,6 +353,10 @@ def Round_100():
     sleep(7)
     press_key("6") # Use CTA
     Level_Up_Check_End(9)
+    game_click("EVENT_EXIT")
+    game_click("EVENT_EXIT")
+    game_click("EVENT_EXIT")
+    game_click("EVENT_EXIT")
 
 
 def Main_Game():
