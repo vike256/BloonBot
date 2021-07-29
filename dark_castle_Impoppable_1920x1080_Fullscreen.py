@@ -221,10 +221,13 @@ def Level_Up_Check_End(seconds):
 
         if found != None:
             print(f'{Fore.RED}Level Up notification detected. Getting rid of it...')
+            time.sleep(1)
             game_click("LEFT_INSTA")  # Accept lvl
-            time.sleep(3)
+            time.sleep(1)
             game_click("LEFT_INSTA")  # Accept knoledge
             time.sleep(1)
+            game_click("BLANK_POSITION") # buffer clicks just in case
+            game_click("BLANK_POSITION") # as above.
             '''
             click("LEFT_INSTA")  # unlock insta
             time.sleep(1)
