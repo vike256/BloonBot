@@ -314,12 +314,15 @@ def Start_Select_Map():
 
 
 def Bank_Collection(position):
+    sleep(0.2)
     game_click(position)
     game_click("COLLECT_LEFT")
     game_click("BLANK_POSITION")
+    sleep(0.2)
     game_click(position)
     game_click("COLLECT_RIGHT")
     game_click("BLANK_POSITION")
+    sleep(0.2)
 
 
 def Null_Round(length):
@@ -353,10 +356,10 @@ def Round_100():
     sleep(7)
     press_key("6") # Use CTA
     Level_Up_Check_End(9)
-    game_click("EVENT_EXIT")
-    game_click("EVENT_EXIT")
-    game_click("EVENT_EXIT")
-    game_click("EVENT_EXIT")
+    game_click("BLANK_POSITION")
+    game_click("BLANK_POSITION")
+    game_click("BLANK_POSITION")
+    game_click("BLANK_POSITION")
 
 
 def Main_Game():
