@@ -525,7 +525,7 @@ def Main_Game():
     upgrade_tower('3', "SUBMARINE_4_LOCATION")
     upgrade_tower('3', "SUBMARINE_4_LOCATION")
     upgrade_tower('3', "SUBMARINE_4_LOCATION")
-    Null_Round(17) # Round 84
+    Powers_Round(17) # Round 84
     Null_Round(15) # Round 85
     Bank_Collection("BANANA_FARM_2_LOCATION")
     place_tower("SUBMARINE", "SUBMARINE_5_LOCATION")
@@ -543,7 +543,7 @@ def Main_Game():
     upgrade_tower('3', "SUBMARINE_6_LOCATION")
     upgrade_tower('3', "SUBMARINE_6_LOCATION")
     Null_Round(15) # Round 86
-    Null_Round(16) # Round 87
+    Powers_Round(16) # Round 87
     place_tower("SUBMARINE", "SUBMARINE_7_LOCATION")
     upgrade_tower('1', "SUBMARINE_7_LOCATION")
     upgrade_tower('1', "SUBMARINE_7_LOCATION")
@@ -558,14 +558,14 @@ def Main_Game():
     upgrade_tower('2', "VILLAGE_LOCATION") # village 220
     upgrade_tower('2', "VILLAGE_LOCATION") # village 230
     Null_Round(7) # Round 90
-    Null_Round(13) # Round 91
+    Powers_Round(13) # Round 91
     Null_Round(19) # Round 92
     Null_Round(14) # Round 93
     Bank_Collection("BANANA_FARM_1_LOCATION")
     Bank_Collection("BANANA_FARM_4_LOCATION")
     upgrade_tower('2', "VILLAGE_LOCATION") # village 240
     Null_Round(17) # Round 94
-    Null_Round(22) # Round 95
+    Powers_Round(22) # Round 95
     place_tower("GLUE", "GLUE_MONKEY_1_LOCATION")
     upgrade_tower('2', "GLUE_MONKEY_1_LOCATION") # glue_1 010
     upgrade_tower('2', "GLUE_MONKEY_1_LOCATION") # glue_1 020
@@ -579,7 +579,7 @@ def Main_Game():
     upgrade_tower('3', "GLUE_MONKEY_2_LOCATION") # glue_2 022
     upgrade_tower('3', "GLUE_MONKEY_2_LOCATION") # glue_2 023
     Null_Round(26) # Round 96
-    Null_Round(15) # Round 97
+    Powers_Round(15) # Round 97
     Bank_Collection("BANANA_FARM_2_LOCATION")
     upgrade_tower('1', "SPIKE_FACTORY_LOCATION")
     upgrade_tower('1', "SPIKE_FACTORY_LOCATION")
@@ -588,7 +588,7 @@ def Main_Game():
     upgrade_tower('2', "SPIKE_FACTORY_LOCATION")
     upgrade_tower('2', "SPIKE_FACTORY_LOCATION") # spike factory to 420
     Null_Round(20) # Round 98
-    Powers_Round(8) # Round 99
+    Null_Round(8) # Round 99
     Round_100()# Round 100
     
 
