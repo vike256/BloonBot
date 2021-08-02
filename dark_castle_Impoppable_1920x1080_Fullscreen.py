@@ -47,7 +47,7 @@ monkeys = {
     "HERO": "U"
 }
 
-button_positions = {  # Creates a dictionary of all positions needed for monkeys (positions mapped to 2160 x 1440 resolution)
+button_positions = {  # Creates a dictionary of all positions needed for monkeys (positions mapped to 1920x1080 resolution)
     "HOME_MENU_START": [842, 936],
     "EXPERT_SELECTION": [1333, 978],
     "RIGHT_ARROW_SELECTION": [1644, 436],
@@ -57,7 +57,7 @@ button_positions = {  # Creates a dictionary of all positions needed for monkeys
     "OVERWRITE_SAVE": [1140, 730],
     "DART_MONKEY_LOCATION": [740, 664],
     "SUBMARINE_1_LOCATION": [1094, 701],
-    "HERO_LOCATION": [875, 440],
+    "HERO_LOCATION": [925, 438],
     "BANANA_FARM_1_LOCATION": [986, 1005],
     "ALCHEMIST_LOCATION": [1025, 845],
     "SPIKE_FACTORY_LOCATION": [1525, 561],
@@ -261,6 +261,60 @@ def Level_Up_Check_End(seconds):
     overtime = time.time() - t_end
 
 
+def Level_Up_Check_78_End(seconds):
+
+    global overtime
+    overtime = 0
+    roundover = True
+
+    t_end = time.time() + seconds
+
+    while time.time() < t_end and roundover: 
+        found = pyautogui.locateOnScreen(path, grayscale=True, confidence=0.9)
+
+        press_key("4") # Use Brambles
+        press_key("5") # Use Wall of Trees
+
+        if found != None:
+            print(f'{Fore.RED}Level Up notification detected. Getting rid of it...')
+            time.sleep(1)
+            game_click("LEFT_INSTA")  # Accept lvl
+            time.sleep(1)
+            game_click("LEFT_INSTA")  # Accept knoledge
+            time.sleep(1)
+            game_click("BLANK_POSITION") # buffer clicks just in case
+            game_click("BLANK_POSITION") # as above.
+            '''
+            click("LEFT_INSTA")  # unlock insta
+            time.sleep(1)
+            click("LEFT_INSTA")  # collect insta
+            time.sleep(1)
+
+            click("MID_INSTA")  # unlock insta
+            time.sleep(1)
+            click("MID_INSTA")  # collect insta
+            time.sleep(1)
+
+            click("RIGHT_INSTA")  # unlock r insta
+            time.sleep(1)
+            click("RIGHT_INSTA")  # collect r insta
+            time.sleep(2)
+            press_key("esc")
+            sleep(0.5)
+            '''
+            # press_key("space")  # Start the game
+            print(f'{Fore.GREEN}Notification kyssed.')
+        else:
+            sleep(0.2)
+
+        """
+        roundcheck = pyautogui.locateOnScreen(startround_path, grayscale=True, confidence=0.9)
+        if roundcheck != None:
+            roundover = False\
+        """
+    move_mouse(button_positions["MIDDLE_POSITION"])
+    overtime = time.time() - t_end
+
 
 def event_check():
 
@@ -349,6 +403,13 @@ def Powers_Farming_Round(length, farm_position):
     press_key("5") # Use Wall of Trees
     move_mouse(button_positions[farm_position])
     Level_Up_Check_End(length)
+
+
+def Round_78(length):
+    press_key("space")  # Start the round
+    press_key("4") # Use Brambles
+    press_key("5") # Use Wall of Trees
+    Level_Up_Check_78_End(length)
 
 
 def Round_100():
@@ -502,7 +563,7 @@ def Main_Game():
     Null_Round(4) # Round 76
     Null_Round(25) # Round 77
     Bank_Collection("BANANA_FARM_3_LOCATION")
-    Powers_Round(36) # Round 78
+    Round_78(36) # Round 78
     Null_Round(29) # Round 79
     Powers_Round(16) # Round 80
     Null_Round(20) # Round 81
